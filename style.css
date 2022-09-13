@@ -10,7 +10,9 @@ body{
     'sidebar header header header header'
     'sidebar dashboard dashboard dashboard dashboard'
     'sidebar dashboard dashboard dashboard dashboard' 
-    'sidebar dashboard dashboard dashboard dashboard' 
+    'sidebar dashboard dashboard dashboard dashboard'
+    'sidebar dashboard dashboard dashboard dashboard'
+    'sidebar dashboard dashboard dashboard dashboard'
     'sidebar dashboard dashboard dashboard dashboard';
 }
 .sidebar{
@@ -18,13 +20,16 @@ body{
     grid-area: sidebar;
     padding-top: 20px;
     padding-bottom: 25px;
-    padding-left: 55px;
+    padding-left: 40px;
+    padding-right: 35px;
     height: 95vh;
 }
 
+
 #logo > *{
-    display: inline-block;
+    display: inline;
     vertical-align:middle;
+    
 }
 h1{
     margin: 0px 0px 0px 10px;
@@ -48,13 +53,180 @@ h2{
     display: inline;
     vertical-align:middle;
 }
+
+#tools{
+    margin-top: 60px;
+    margin-left: 25px;
+}
+
+#tools > .tools_item{
+    margin-top: 25px;
+}
+
+#tools > .tools_item > *{
+    display: inline;
+    vertical-align:middle;
+}
+
+
 .header{
     background-color: rgb(127, 208, 255);
     grid-area: header;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
+    
+}
+
+.header > #upper > *{
+    display: inline-block;
+    vertical-align:middle;
+}
+
+#search_field{
+    margin: 0px 150px 0px 20px;
+    width: 800px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgb(240, 240, 240);
+}
+.header > #upper > svg{
+    margin: 0px 10px 0px 10px;
+}
+header > #upper > h3 {
+    margin: 0px 10px 0px 10px;
+}
+#profile_image{
+    width: 40px;
+    border-radius: 25px;
+    margin: 0px 10px 0px 10px;
+}
+.header > #lower > *{
+    display: inline-block;
+    vertical-align:middle;
+}
+
+#profile_big_image{
+    width: 70px;
+    border-radius: 55px;
+    margin: 0px 10px 0px 10px;
+}
+
+.header > #lower > #profile_name >h4{
+    margin: 0px;
+    font-size:18px;
+}
+.header > #lower > #profile_name > h1{
+    margin: 0px;
+    font-size: 28px;
 }
 .dashboard{
-    background-color: white;
+    background-color: rgb(233, 233, 233);
     grid-area: dashboard;
+    padding: 15px;
+    display: grid;
+    grid-template-areas:
+    'projects projects announcements'
+    'projects projects trending';
+}
+
+#projects{
+    grid-area: projects;
     padding: 20px;
+}
+
+#projects > h3{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+#projects > #cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+#projects > #cards > .card{
+    padding: 10px 30px;
+    padding-left: 35px;
+    border-left: 10px solid rgb(130, 153, 255);
+    border-radius: 15px;
+    background-color: white;
+}
+
+#projects > #cards > .card > h4{
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+#projects > #cards > .card > p{
+    font-size: 16px;
+}
+
+#projects > #cards > .card > .icons{
+    text-align: end;
+    margin: 0px 0px 10px 0px;
+}
+
+
+#announcements > .container{
+    grid-area: announcements;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#announcements> h3{
+    font-size: 20px;
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.announcement> .container >h5{
+    font-size: 16px;
+    margin: 5px;
+}
+
+.announcement> .container > p{
+    font-size: 14px;
+    margin: 5px;
+}
+
+#trending > .container{
+    grid-area: trending;
+    margin: 10px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#trending > h3{
+    font-size: 20px;
+    margin: 20px;
+}
+
+#trending > .container > .people{
+    margin: 5px;
+}
+
+#trending > .container > .people > *{
+    vertical-align:middle;
+}
+
+#trending > .container > .people > img{
+    margin-right: 10px;
+}
+
+#trending > .container > .people > div > h5{
+    margin: 0px;
+}
+
+#trending > .container > .people > div > p{
+    margin: 0px;
+}
+
+#trending > .container > .people > img{
+    width: 50px;
 }
